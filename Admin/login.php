@@ -41,6 +41,7 @@ ob_end_flush();
 <input name="submit" type="submit" value="Login" />
 </form>
 <p>Not registered yet? <a href='registration.php'>Register Here</a></p>
+<p> <a href='../index.html'>Home</a></p>
 
 
 </div>
