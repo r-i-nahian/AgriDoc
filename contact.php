@@ -97,7 +97,7 @@
                         </h3>
                         <hr>
                         <!--Start Contact form -->
-                        <form name="enq" method="post" action="email/" onsubmit="return validation();">
+                        <form name="enq" action="mail.php" method="POST">
                             <fieldset>
 
                                 <input type="text" name="name" id="name" value="" class="input-block-level" placeholder="Name" />
@@ -153,9 +153,8 @@
 
                         <h3>About AgriDoc</h3>
 
-                        <p>This project is made for CSE 499 course under the surveillance of <br>Dr. Shazzad Hosain 
-<br>Associate Professor <br>
- North South University</p>
+                        <p>This project is made for CSE 499 course under the surveillance of <br>Dr. Shazzad Hosain
+                            <br>Associate Professor <br> North South University</p>
 
                         <p>
                             <a href="#" title="Terms of Use">Terms of Use</a><br />
@@ -165,20 +164,20 @@
                         </p>
 
                     </div>
-                   <div class="span3" id="footerArea2">
+                    <div class="span3" id="footerArea2">
 
                         <h3>Recent News</h3>
                         <p>
                             <a href="technical_update.html" title="">মুরগির জটিল রোগ নির্ণয়ে উদ্ভাবিত দেশি পদ্ধতি</a><br />
-                            
+
                         </p>
                         <p>
                             <a href="technical_update.html" title="">কৃষিতে নতুন বিপ্লব আনবে ‘ই-ভিলেজ’</a><br />
-                            
+
                         </p>
                         <p>
                             <a href="technical_update.html" title="">কৃষিতে নতুন প্রযুক্তি: ইউরিয়ার পরিবর্তে ব্যাকটেরিয়া</a><br />
-                            
+
                         </p>
                         <p>
                             <a href="technical_update.html" title="">নতুন উদ্ভাবিত ধান কাটা সহ মারাই মেশিন</a>
@@ -222,10 +221,10 @@
                         </p>
 
                         <p class="social_bookmarks">
-                                <a href="www.facebook.com"><i class="social foundicon-facebook"></i> Facebook</a>
-                                <a href="twitter.com"><i class="social foundicon-twitter"></i> Twitter</a>
-                                <a href="pinterest.com"><i class="social foundicon-pinterest"></i> Pinterest</a>
-                            </p>
+                            <a href="www.facebook.com"><i class="social foundicon-facebook"></i> Facebook</a>
+                            <a href="twitter.com"><i class="social foundicon-twitter"></i> Twitter</a>
+                            <a href="pinterest.com"><i class="social foundicon-pinterest"></i> Pinterest</a>
+                        </p>
                     </div>
                 </div>
 
