@@ -8,7 +8,7 @@
 <body>
 <div class="form">
 <p>Welcome !</p>
-<p>This is secure area.</p>
+<p>Thank you for being with us. User interface is coming soon!</p>
 
 <a href="../index.html">Logout</a>
 
