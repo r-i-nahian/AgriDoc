@@ -1,9 +1,14 @@
 <?php
-
-
 session_start();
-if(session_destroy()) // Destroying All Sessions
-{
-header("Location: login.php"); // Redirecting To Home Page
+
+if (!isset($_SESSION['userSession'])) {
+	header("Location: index.php");
+} else if (isset($_SESSION['userSession'])!="") {
+	header("Location: home.php");
 }
-?>
+
+if (isset($_GET['logout'])) {
+	session_destroy();
+	unset($_SESSION['userSession']);
+	header("Location: index.php");
+}
