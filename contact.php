@@ -62,8 +62,7 @@
 
                                         </ul>
                                     </li>
-                                    <li><a href="solution.html">Solution</a></li>
-                                    <li><a href="user.html">Sign In/Sign Up</a></li>
+                                    <li><a href="user/index.php">Sign In/Sign Up</a></li>
                                     <li class="active"><a href="contact.php">Contact</a></li>
                                 </ul>
                             </div>
