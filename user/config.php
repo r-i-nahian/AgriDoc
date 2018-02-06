@@ -2,7 +2,7 @@
 
 $host = "localhost";    /* Host name */
 $user = "root";         /* User */
-$password = "root";         /* Password */
+$password = "";         /* Password */
 $dbname = "Agridoc";   /* Database name */
 
 // Create connection
