@@ -22,11 +22,20 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `images` (
   `id` int(11) NOT NULL,
-  `name` varchar(200) NOT NULL,
-  `image` longtext NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `username` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  
+  `username` varchar(255)  NOT NULL,
+  `report` varchar(1000)  NOT NULL,
+    `image` longblob NOT NULL,
+  `created` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `images`
+
 
 -- --------------------------------------------------------
 
