@@ -66,18 +66,15 @@ $userRow=$query->fetch_array();
                                     <td>Image</td>
                                     
                                 </tr>
- <?php
+         <?php
             $query2 = $DBcon->query("SELECT * FROM images");
-while($data=$query2->fetch_array()){
-    echo "<tr><td>" . $data['created'] . "</td><td>" . $data['username'] . "</td><td>". $data['report'] ."</td><td>". "</td><td>".  "</td><td>";  
-                        }
-
-                        echo "</table>"; 
-
+            while($data=$query2->fetch_array()){
+            echo "<tr><td>" . $data['created'] . "</td><td>" . $data['username'] . "</td><td>". $data['report'] ."</td><td>";  
             
-            
-          ?>
-          <img src="../user/view.php?id=1" alt="" height="400px" width="400px">
+            }
+            echo "</table>"; 
+        ?>
+          
         </div>
 
         </div>
