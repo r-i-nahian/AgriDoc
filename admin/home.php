@@ -58,26 +58,27 @@ $userRow=$query->fetch_array();
         <div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:35px;">
             <h4 style="color:#97c950;">Report Data</h4>
             <br>
-<table class="table table-hover">
-                                <tr>
-                                   <td>Date</td>
-                                    <td>Username</td>
-                                    <td>Report</td>
-                                    <td>Image</td>
-                                    
-                                </tr>
-         <?php
+            <table class="table table-hover">
+                <tr>
+                    <td>Date</td>
+                    <td>Username</td>
+                    <td>Report</td>
+                    <td>Image</td>
+
+                </tr>
+                <?php
             $query2 = $DBcon->query("SELECT * FROM images");
             while($data=$query2->fetch_array()){
-            echo "<tr><td>" . $data['created'] . "</td><td>" . $data['username'] . "</td><td>". $data['report'] ."</td><td>";  
+            echo "<tr><td>" . $data['created'] . "</td><td>" . $data['username'] . "</td><td>". $data['report'] ."</td><td><img src=\"../user/view.php?id=".$data['id'] . "\"></td>";  
+            //echo "$data['created'] $data['username']  $data['report'] ";  
             
             }
-            echo "</table>"; 
+            
         ?>
-          
+            </table>
         </div>
 
-        </div>
+<img src="" alt="">
 
     </body>
 
