@@ -62,14 +62,12 @@ $DBcon->close();
 
 
                     <input class="form-control" type="text" name="username" placeholder="Your Name">
-                    <input class="form-control" type="text" name="report" placeholder="Write your problem" style="height:120px;"> 
-                    Problem Catagory:
-                    <select name="" id="" class="form-control">
+                    <input class="form-control" type="text" name="report" placeholder="Write your problem" style="height:120px;"> Problem Catagory:
+                    <select name="catagory" id="" class="form-control">
                         <option value="1">Agriculture</option>
                         <option value="2">Fish</option>
                         <option value="3">Animal</option>
-                    </select>
-                    Select image to upload:
+                    </select> Select image to upload:
                     <input class="form-control" type="file" name="image" />
                     <input type="submit" class="form-control" name="submit" value="UPLOAD" />
                 </div>

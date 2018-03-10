@@ -29,11 +29,12 @@ if(isset($_POST["submit"])){
         $dataTime = date("Y-m-d H:i:s");*/
         
         $username = mysqli_real_escape_string($db, $_POST['username']);
+        $catagory = mysqli_real_escape_string($db, $_POST['catagory']);
 $report = mysqli_real_escape_string($db, $_POST['report']);
 $dataTime = date("Y-m-d H:i:s");
         
         //Insert image content into database
-        $insert = $db->query("INSERT into images (username,report,image, created) VALUES ('$username','$report','$imgContent', '$dataTime')");
+        $insert = $db->query("INSERT into images (username,report,image, created,catagory) VALUES ('$username','$report','$imgContent', '$dataTime','$catagory')");
         if($insert){
             echo "File uploaded successfully.";
         }else{
