@@ -26,6 +26,12 @@ $userRow=$query->fetch_array();
         <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
 
         <link rel="stylesheet" href="style.css" type="text/css" />
+        <style>
+            img {
+                height: 300px;
+                width : 400px;
+            }
+        </style>
     </head>
 
     <body>
@@ -43,7 +49,12 @@ $userRow=$query->fetch_array();
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="">Back to Article</a></li>
+                       <li class="active"><a href="../index.html">Home</a></li>
+                        <li ><a href="agriculture.php">Agriculture</a></li>
+                        <li ><a href="fish.php">Fish</a></li>
+                        <li ><a href="animal.php">Animal</a></li>
+                        <li><a href="../index.html">Main Site</a></li>
+                        
 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -56,26 +67,9 @@ $userRow=$query->fetch_array();
         </nav>
 
         <div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:35px;">
-            <h4 style="color:#97c950;">Report Data</h4>
-            <br>
-            <table class="table table-hover">
-                <tr>
-                    <td>Date</td>
-                    <td>Username</td>
-                    <td>Report</td>
-                    <td>Image</td>
-
-                </tr>
-                <?php
-            $query2 = $DBcon->query("SELECT * FROM images");
-            while($data=$query2->fetch_array()){
-            echo "<tr><td>" . $data['created'] . "</td><td>" . $data['username'] . "</td><td>". $data['report'] ."</td><td><img src=\"../user/view.php?id=".$data['id'] . "\"></td>";  
-            //echo "$data['created'] $data['username']  $data['report'] ";  
-            
-            }
-            
-        ?>
-            </table>
+           <h1>Welcome <?php echo $userRow['username']; ?></h1>
+         
+           
         </div>
 
 <img src="" alt="">
