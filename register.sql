@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Mar 04, 2018 at 08:24 PM
+-- Generation Time: Mar 11, 2018 at 07:20 AM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.8
 
@@ -23,6 +23,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `images` (
   `id` int(11) NOT NULL,
   `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `catagory` varchar(23) COLLATE utf8_unicode_ci NOT NULL,
   `report` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
   `image` longblob NOT NULL,
   `created` datetime NOT NULL
@@ -107,7 +108,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `tbl_users`
 --
