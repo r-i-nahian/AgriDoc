@@ -3,7 +3,7 @@ if(!empty($_GET['id'])){
     //DB details
     $dbHost = 'localhost';
     $dbUsername = 'root';
-    $dbPassword = 'root';
+    $dbPassword = '';
     $dbName = 'Agridoc';
     
     //Create connection and select DB

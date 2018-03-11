@@ -2,7 +2,7 @@
 
 	 $DBhost = "localhost";
 	 $DBuser = "root";
-	 $DBpass = "root";
+	 $DBpass = "";
 	 $DBname = "Agridoc";
 	 
 	 $DBcon = new MySQLi($DBhost,$DBuser,$DBpass,$DBname);
