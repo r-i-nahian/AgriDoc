@@ -36,7 +36,7 @@ $dataTime = date("Y-m-d H:i:s");
         //Insert image content into database
         $insert = $db->query("INSERT into images (username,report,image, created,catagory) VALUES ('$username','$report','$imgContent', '$dataTime','$catagory')");
         if($insert){
-            echo "File uploaded successfully.";
+            echo "<h1>File uploaded successfully.</h1><br><a href=\"home.php\">  Submit Another Report </a><br><a href=\"../index.html\">  Home </a>";
         }else{
             echo "File upload failed, please try again.";
         } 
