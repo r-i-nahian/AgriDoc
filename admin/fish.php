@@ -75,8 +75,8 @@ $userRow=$query->fetch_array();
             <?php
             $query2 = $DBcon->query("SELECT * FROM images WHERE catagory=2");
             while($data=$query2->fetch_array()){
-            echo "<h5> " . $data['created'] . "</h5><h3> Username :" . $data['username'] . "</h3><h3>Problem:<h3><p>". $data['report'] ."</p><img src=\"../user/view.php?id=".$data['id'] . " \"><br/><a href=\"../user/view.php?id=".$data['id'] ."\" target=\"_blank\">Click to view large Image</a><hr/>";  
-            //echo "$data['created'] $data['username']  $data['report'] ";  
+           echo "<h5> " . $data['created'] . "</h5><h3> Username :" . $data['username'] . "</h3><h3>Phone : ".$data['phone']."</h3><h3>Address : ".$data['address']."</h3><h3>Problem:</h3><p>". $data['report'] ."</p><img src=\"../user/view.php?id=".$data['id'] . " \"><br/><a href=\"../user/view.php?id=".$data['id'] ."\" target=\"_blank\">Click to view large Image</a><hr/>";
+             
             
             }
             
