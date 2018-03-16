@@ -13,7 +13,7 @@ if(isset($_POST["submit"])){
         //DB details
         $dbHost = 'localhost';
         $dbUsername = 'root';
-        $dbPassword = '';
+        $dbPassword = 'root';
         $dbName = 'Agridoc';
         
         //Create connection and select DB
