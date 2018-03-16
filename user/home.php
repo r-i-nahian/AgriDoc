@@ -61,8 +61,11 @@ $DBcon->close();
                 <div class="form-group">
 
 
-                    <input class="form-control" type="text" name="username" placeholder="Your Name">
-                    <input class="form-control" type="text" name="report" placeholder="Write your problem" style="height:120px;"> Problem Catagory:
+                    <input class="form-control" type="text" name="username" placeholder="Name" >
+                    <input class="form-control" type="text" name="phone" placeholder="Phone No" > 
+                    <input class="form-control" type="text" name="address" placeholder="Address"  style="height:50px;"> 
+                    <input class="form-control" type="text" name="report" placeholder="Write your problem" style="height:120px;"> 
+                    Problem Catagory:
                     <select name="catagory" id="" class="form-control">
                         <option value="1">Agriculture</option>
                         <option value="2">Fish</option>
@@ -70,6 +73,7 @@ $DBcon->close();
                     </select> Select image to upload:
                     <input class="form-control" type="file" name="image" />
                     <input type="submit" class="form-control" name="submit" value="UPLOAD" />
+                    <input type="reset"  class="form-control" value="Reset">
                 </div>
 
             </form>

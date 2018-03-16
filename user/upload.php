@@ -28,13 +28,15 @@ if(isset($_POST["submit"])){
         $report = mysqli_real_escape_string($link, $_REQUEST['report']);
         $dataTime = date("Y-m-d H:i:s");*/
         
-        $username = mysqli_real_escape_string($db, $_POST['username']);
+       $username = mysqli_real_escape_string($db, $_POST['username']);
         $catagory = mysqli_real_escape_string($db, $_POST['catagory']);
 $report = mysqli_real_escape_string($db, $_POST['report']);
+        $phone = mysqli_real_escape_string($db, $_POST['phone']);
+        $address = mysqli_real_escape_string($db, $_POST['address']);
 $dataTime = date("Y-m-d H:i:s");
         
         //Insert image content into database
-        $insert = $db->query("INSERT into images (username,report,image, created,catagory) VALUES ('$username','$report','$imgContent', '$dataTime','$catagory')");
+        $insert = $db->query("INSERT into images (username,report,image, created,catagory,phone,address) VALUES ('$username','$report','$imgContent', '$dataTime','$catagory','$phone','$address')");
         if($insert){
             echo "<h1>File uploaded successfully.</h1><br><a href=\"home.php\">  Submit Another Report </a><br><a href=\"../index.html\">  Home </a>";
         }else{
